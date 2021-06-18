@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="webGenesis">
+    <title>VeChainThor Blockchain ｜ Public Blockchain for Business Mass Adoption</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- START HEADER SECTION -->
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#"><img src="./images/brand.png" alt=""></a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="#" class="active">Home</a></li>
+                <li id="drop" style="display: inline-block;"><a
+                        href="https://www.fiverr.com/users/itzjunaedrayhan/requests">Builders ▾</a><span
+                        onclick="myFunction()" id="plusBtn">+</span>
+                    <ul class="sub-nav">
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Startup</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Application Hub</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Grant Program</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="banner-section">
+        <div class="banner-wrapper">
+            <div class="banner-content">
+                <h1>VeChainThor</h1>
+                <h3>The public blockchain that derives its value from
+                    activities created by members within the ecosystem
+                    solving real world economic problems
+                </h3>
+                <div class="banner-button">
+                    <a href="#"><img src="./images/icons/paper-download.png" alt=""> WHITEPAPER</a>
+                    <a href="#"><img src="./images/icons/github.png" alt=""> GITHUB</a>
+                </div>
+            </div>
+            <div class="player-system">
+                <a href="#">
+                    <img src="./images/player.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER SECTION -->
+
+
+
+
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        var clicked = false;
+        function myFunction() {
+            let subNav = document.querySelector(".sub-nav");
+            if (clicked) {
+                document.getElementById("plusBtn").innerText = "+";
+                subNav.style.position = "absolute";
+                subNav.style.visibility = "hidden";
+                subNav.style.transitionDelay = "1s";
+                subNav.style.display = "none";
+                document.getElementById("plusBtn").style.top = "40%";
+                document.getElementById("plusBtn").style.right = "-120px";
+                clicked = false;
+            } else {
+                document.getElementById("plusBtn").innerText = "-";
+                subNav.style.position = "relative";
+                subNav.style.visibility = "visible";
+                subNav.style.transitionDelay = "1s";
+                subNav.style.display = "block";
+                document.getElementById("plusBtn").style.top = "26px";
+                document.getElementById("plusBtn").style.right = "-100px";
+                clicked = true;
+            }
+        }
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+            document.getElementById("plusBtn").style.display = "block";
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+            document.getElementById("plusBtn").style.display = "none";
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
+    <!-- jquery Main File -->
+    <script src="js/jquery.3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

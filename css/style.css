@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.content {
+    background: transparent;
+    color: black;
+    display: flex;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+.navbar.sticky {
+    background: #fff;
+    padding: 0;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a img {
+    height: 16px;
+    width: 110px;
+}
+.navbar .menu-list {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+.menu-list li {
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+.menu-list li .active {
+    color: #0590c7;
+}
+.menu-list li a:hover {
+    color: #0590c7;
+}
+.menu-list li a {
+    color: #a2a2a2;
+    display: block;
+    text-decoration: none;
+    font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+.menu-list li a:hover {
+    color: #007bff;
+}
+#drop .sub-nav {
+    width: 110px;
+    z-index: 200;
+    background: #fff;
+    color: #a2a2a2;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding: 0;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+    visibility: hidden;
+    display: none;
+}
+#drop {
+    position: relative;
+}
+.sub-nav li a {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+}
+#drop:hover .sub-nav {
+    visibility: visible;
+    display: block;
+}
+#plusBtn {
+    position: absolute;
+    right: -120px;
+    top: 40%;
+    font-size: 22px;
+    color: #a2a2a2;
+    display: none;
+}
+.banner {
+    height: 110px;
+}
+.icon {
+    color: #a2a2a2;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+.menu-list .cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.banner-section {
+    background: url('../images/Home\ Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 110vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.banner-content {
+    max-width: 600px;
+    margin-top: -15%;
+}
+.player-system {
+    margin: -15% auto 0 auto;
+}
+.banner-content h1 {
+    font-family: revert;
+    font-size: 72px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    padding: 0 0 10px 0;
+}
+.banner-content h3 {
+    font-size: 24px;
+    font-family: arial;
+    padding-bottom: 30px;
+}
+.banner-content .banner-button a {
+    text-align: center;
+    background: rgb(21, 123, 246, 0.3);
+    width: 130px;
+    padding: 2px 0;
+    border-radius: 25px;
+    color: #b1b4ba;
+    text-decoration: none;
+    padding: 5px 10px 5px 0px;
+    font-weight: bold;
+}
+.banner-content .banner-button a img {
+    width: 25px;
+    height: 25px;
+    padding: 2px 0 5px 7px;
+}
+header.sticky {
+    padding: 5px 100px;
+}
+/*********************************          Responsive Design       *************************/
+@media (max-width: 1230px) {
+    .content {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding: 0 40px;
+    }
+    .banner-content {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 930px) {
+    .banner {
+        height: 65px;
+    }
+    .content {
+        padding: 0 30px;
+        height: 60px;
+    }
+    .content .logo img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 45%;
+    }
+    .banner-wrapper {
+        width: 100%;
+    }
+    .banner-content {
+        width: 100%;
+        margin: 5% auto 3% auto;
+    }
+    .player-system a img {
+        display: block;
+        width: 100%;
+    }
+    #drop .sub-nav {
+        width: 110px;
+        z-index: 200;
+        color: #a2a2a2;
+        background: transparent;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        padding: 0 30px;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0);
+        font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+        visibility: hidden;
+        transition: all 0.5s ease;
+    }
+}
+
+@media (max-width: 868px) {
+    body.disabled {
+        overflow: hidden;
+    }
+    .icon {
+        display: block;
+    }
+    .icon.hide {
+        display: none;
+    }
+    .navbar .menu-list {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list {
+        left: 0%;
+    }
+    .menu-list li {
+        padding: 5px;
+        list-style: none;
+        font-weight: bold;
+    }
+    .menu-list li .active {
+        color: #0590c7;
+    }
+    .menu-list li a:hover {
+        color: #0590c7;
+    }
+    .menu-list li a {
+        color: #a2a2a2;
+        margin-top: 20px;
+        display: block;
+        text-decoration: none;
+        font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .menu-list li a:hover {
+        color: #007bff;
+    }
+    .navbar.show .menu-list li a {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 580px) {
+    .banner-content h1 {
+        font-size: 50px;
+    }
+    .banner-content h3 {
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 380px) {
+    .banner-content h1 {
+        font-size: 38px;
+    }
+    .banner-content h3 {
+        font-size: 18px;
+        text-align: justify;
+    }
+}
