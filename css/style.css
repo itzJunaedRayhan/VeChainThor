@@ -3,7 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .content {
     background: transparent;
@@ -175,6 +182,498 @@
 header.sticky {
     padding: 5px 100px;
 }
+
+
+
+
+
+
+
+/*******************************        Resources Section       ******************************/
+.resources-section{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.resources-section .resources-header h1{
+    font-family: revert;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    color: #23274a;
+    padding: 0 0 5px 0px;
+    margin-top: 25px;
+}
+.resource-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 0.7px solid rgb(221, 223, 231);
+    padding: 25px;
+    border-radius: 5px;
+}
+.resource-wrapper:hover,
+.second-row-wrapper:hover,
+.third-row-wrapper:hover,
+.fourth-row-wrapper:hover{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.resources-section img{
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+}
+.resources-section h4{
+    font-size: 20px;
+    color: rgb(35,39,74);
+}
+.resources-section p{
+    font-size: 14px;
+    padding: 18px 0;
+    color: #727488;
+    font-weight: 499;
+}
+.second-row-wrapper{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 0.7px solid rgb(221, 223, 231);
+    padding: 25px 35px;
+    border-radius: 5px;
+    margin: 7px 0;
+}
+.second-row-wrapper img{
+    margin-top: 25px;
+}
+.third-row-wrapper{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 0.7px solid rgb(221, 223, 231);
+    padding: 25px 35px;
+    margin: 7px 0;
+    border-radius: 5px;
+}
+.third-row-wrapper img{
+    margin-right: 40px;
+}
+.fourth-row-wrapper{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 0.7px solid rgb(221, 223, 231);
+    padding: 25px 35px;
+    border-radius: 5px;
+    margin: 7px 0;
+}
+.fourth-row-wrapper img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.fourth-row-text p{
+    color: rgb(114, 116, 136);
+    font-size: 14px;
+    background-color: initial;
+    word-spacing: normal;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+.fourth-row-text .fourth-row-icons{
+    display: flex;
+}
+.fourth-row-icons a{
+    border: 2px solid rgba(64,90,126,1);
+    border-radius: 0;
+    height: 45px;
+    width: 90px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fourth-row-text .fourth-row-icons img{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+.fourth-row-text>a{
+    color: #727488;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    text-decoration: underline;
+}
+.fourth-row-text{
+    padding-left: 20px;
+}
+.fourth-row-text .sync{
+    width: 170px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid rgba(64,90,126,1);
+    margin: 8px 0;
+}
+
+
+
+
+
+
+
+
+
+/*********************************          Transaction Section       *************************/
+.transaction-section{
+    background-image: url('../images/Transaction/Transaction-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 100px;
+}
+.transaction-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.transaction-wrapper h1{
+    padding: 100px 0 40px 0;
+    text-align: center;
+    font-family: revert;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    color: #23274a;
+    display: block;
+    vertical-align: bottom;
+}
+.transaction-wrapper p{
+    color: #595F6F;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.transaction-first{
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    margin: 10px 0;
+}
+.transaction-first img{
+    float: right;
+    height: 90px;
+    width: 90px;
+    margin: 50px 8px 25px 8px;
+    padding-left: 30px;
+}
+.transaction-first h5,
+.transaction-second h5{
+    font-size: 15px;
+    color: #727488;
+    font-weight: 700;
+}
+.transaction-first p{
+    width: 70%;
+    margin-left: auto;
+    font-size: 14px;
+    padding: 15px 8px;
+    color: #727488;
+    text-align: right;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+.transaction-second img{
+    float: left;
+    height: 90px;
+    width: 90px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+.transaction-second{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.transaction-second p{
+    width: 70%;
+    margin-right: auto;
+    font-size: 14px;
+    padding: 15px 8px;
+    color: #727488;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+.authority-wrapper{
+    max-width: 1100px;
+    margin: 100px auto;
+    height: auto;
+}
+.authority-wrapper h1{
+    padding: 40px 0 20px 0;
+    text-align: center;
+    font-family: revert;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
+    display: block;
+    vertical-align: bottom;
+}
+.authority-wrapper p{
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.authority-wrapper > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    width: 160px;
+    height: 50px;
+    border: 1px solid #fff;
+    font-family: arial;
+    font-size: 16px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+.authority-wrapper .authority{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    min-height: 160px;
+}
+.authority-wrapper .authority .authority-image{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.authority-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.authority-wrapper .authority-text p{
+    font-size: 14px;
+    color: rgb(89, 95, 111);
+    padding: 60px 15px 0 15px;
+    text-align: center;
+}
+.authority-background{
+    max-width: 700px;
+    max-height: 720px;
+    margin: 0px auto;
+}
+.authority-background img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.governance-wrapper{
+    max-width: 1100px;
+    min-height: 410px;
+    margin: 100px auto 110px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.governance-wrapper .governance-text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 17px;
+}
+.governance-text h1{
+    padding: 40px 0 20px 0;
+    text-align: center;
+    font-family: revert;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    color: #23274a;
+    display: block;
+    vertical-align: bottom;
+}
+.governance-text p{
+    color: #595F6F;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: left;
+}
+.governance-image{
+    max-width: 360px;
+    margin: 0 auto 40px auto;
+}
+.governance-image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************          Economy Section       *************************/
+.economy-section{
+    max-width: 1100px;
+    margin: 0px auto 50px auto;
+}
+.economy-section .economy-image{
+    max-width: 470px;
+    max-height: 500px;
+    margin: 30px auto 0 auto;
+}
+.economy-section .economy-image img{
+    height: 100%;
+    width: 100%;
+}
+.economy-text h1{
+    padding: 40px 0 20px 0;
+    text-align: center;
+    font-family: revert;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    color: #23274a;
+    display: block;
+    vertical-align: bottom;   
+}
+.economy-text p{
+    color: #595F6F;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    text-align: left;
+}
+.option{
+    display: inline-flex;
+    align-items: flex-start;
+}
+.option img{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.option p{
+    color: #8f96a8;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+/*********************************          Carousel Section       *************************/
+.carousel-section{
+    overflow: hidden !important;
+}
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1 !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    opacity: 1 !important;
+    height: 50px !important;
+    width: 50px !important;
+}
+.carousel-control-prev {
+    left: -5% !important;
+}
+.carousel-control-next {
+    right: -5% !important;
+}
+
+
+
+
+
+
+
+/*********************************          VeChain Section       *************************/
+.vechain-section{
+    background-image: url('../images/Vechain/veChain-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center center;
+}
+.vechain-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    color: #fff;
+}
+.vechain-wrapper h1{
+    font-size: 28px;
+    font-family: revert;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*********************************          Responsive Design       *************************/
 @media (max-width: 1230px) {
     .content {
@@ -245,7 +744,7 @@ header.sticky {
     }
     .navbar .menu-list {
         position: fixed;
-        height: 100vh;
+        height: 120vh;
         width: 100%;
         max-width: 400px;
         left: -100%;
@@ -284,9 +783,85 @@ header.sticky {
     .navbar.show .menu-list li a {
         margin-left: 0px;
     }
+    .resources-section .resources-header h1{
+        font-size: 36px;
+    }
+    .resource-wrapper,
+    .second-row-wrapper,
+    .fourth-row-wrapper{
+        height: 200px;
+    }
+    .fourth-row-icons a {
+        width: 70px;
+        height: 35px;
+    }
+    .fourth-row-text .sync {
+        width: 140px;
+    }
+    .transaction-section{
+        padding: 15px;
+    }
+    .transaction-wrapper h1{
+        font-size: 25px;
+        padding: 100px 0px 10px 0px;
+    }
+    .transaction-wrapper p{
+        font-size: 16px;
+        text-align: justify;
+        padding: 15px;
+    }
+    .transaction-first{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .transaction-image{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .transaction-first img{
+        float: none;
+        clear: both;
+    }
+    .transaction-first img,
+    .transaction-second img{
+        width: 70px;
+        height: 70px;
+        padding: 0;
+    }
+    .transaction-first p,
+    .transaction-second p{
+        width: 100%;
+        font-size: 12px;
+    }
+    .transaction-first h5,
+    .transaction-second h5{
+        text-align: left;
+        padding-left: 5px;
+    }
+    .authority-wrapper h1,
+    .governance-text h1,
+    .economy-text h1{
+        font-size: 25px;
+        padding: 40px 0px 10px 0px;
+    }
+    .authority-wrapper p,
+    .economy-text p{
+        font-size: 16px;
+        text-align: justify;
+        padding: 15px;
+    }
+    .vechain-wrapper h1{
+        font-size: 18px;
+    }
+    
 }
 
 @media (max-width: 580px) {
+    .banner-content{
+        padding: 0 15px;
+    }
     .banner-content h1 {
         font-size: 50px;
     }
@@ -294,14 +869,28 @@ header.sticky {
         font-size: 15px;
         text-align: justify;
     }
+    .resource-wrapper,
+    .second-row-wrapper,
+    .third-row-wrapper{
+        height: 230px;
+        padding: 30px 10px;
+    }
+    .governance-text p,
+    .economy-text p,
+    .option p{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 380px) {
+    .banner-content{
+        padding: 0 15px;
+    }
     .banner-content h1 {
         font-size: 38px;
     }
     .banner-content h3 {
-        font-size: 18px;
+        font-size: 14px;
         text-align: justify;
     }
 }
