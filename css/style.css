@@ -663,12 +663,314 @@ header.sticky {
     text-align: center;
     padding: 50px 0;
 }
+.vechain{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.vechain h4{
+    font-size: 25px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.vechain p{
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+    padding: 5px 10px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.vechain-first{
+    width: 415px;
+    text-align: right;
+    margin: 15px;
+}
+.vechain-second{
+    width: 415px;
+    text-align: left;
+    margin: 15px;
+}
+.vechain-third{
+    width: 355px;
+    text-align: right;
+    margin: 15px;
+}
+.vechain-four{
+    width: 355px;
+    text-align: left;
+    margin: 15px;
+}
+.vechain-five{
+    width: 415px;
+    text-align: right;
+    margin: 15px;
+}
+.vechain-six{
+    width: 415px;
+    text-align: left;
+    margin: 15px;
+}
 
 
 
 
 
 
+
+
+/*********************************          Committee Section       *************************/
+.committee-section{
+    background-image: url('../images/Committee/Advisor-bg.png');
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-attachment: scroll;
+    background-position: right top;
+    background-color: #F7F8FB;
+}
+.committee-section h1{
+    font-family: revert;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    color: #23274a;
+    display: block;
+    padding: 180px 0 35px 0;
+    text-align: center;
+}
+.committee-section p{
+    color: rgb(96, 102, 117);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+.committee-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.members{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.member{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 15px;
+    border-radius: 6px;
+}
+.member img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+.member p{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 7px 0px;
+    color: #e5e5e5;
+}
+.advisors-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.advisors{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.advisor{
+    width: 210px;
+    height: 270px;
+    text-align: center;
+    margin: 10px;
+}
+.advisor:nth-child(4),
+.advisor:nth-child(8){
+    width: 270px;
+}
+.advisor img{
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.advisor a{
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: 10px auto;
+}
+.advisor a img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+}
+.advisor h5{
+    font-size: 16px;
+    color: #000;
+    padding: 10px 5px;
+}
+.advisor p{
+    font-size: 12px;
+    color: #5B5B5B;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*********************************         Newsletter Section       *************************/
+.newsletter-section{
+    background-color: #e5e5e5;
+    width: 100%;
+    margin-top: -20px;
+    padding: 75px 100px;
+}
+.newsletter-wrapper{
+    position: relative;
+    max-width: 1140px;
+    max-height: 400px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 0px;
+}
+.newsletter-wrapper .newsletter-text{
+    padding: 0px 10px 0px 100px;
+}
+.newsletter-wrapper .newsletter-text h1{
+    font-family: revert;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    color: #0a0a0a;
+}
+.newsletter-wrapper .newsletter-text p{
+    font-family: arial;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #0a0a0a;
+    margin: 15px 0px 40px 0px;
+}
+.newsletter-wrapper .newsletter-image{
+    width: 570px;
+    height: 400px;
+    padding-top: 70px;
+    margin-right: -10%;
+}
+.newsletter-image img{
+    height: 300px;
+    width: 300px;
+}
+.newsletter-text a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 120px;
+    height: 50px;
+    border: 1px solid rgb(10, 10, 10);
+    font-family: arial;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: rgb(10, 10, 10);
+}
+
+
+
+
+
+
+
+/*********************************          Responsive Design       *************************/
+.footer-section{
+    background-color: #023042;
+    color: #fff;
+}
+.footer-wrapper{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 60px 0 25px 20px;
+}
+.footer-wrapper h1{
+    font-size: 30px;
+    font-family: revert;
+    font-weight: 600;
+}
+.footer-wrapper hr{
+    height: 1.5px;
+    color: #fff;
+    margin: 20px 0 25px 0;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer{
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.footer h4{
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px 0 0 0;
+}
+.footer-items .footer ul li{
+    list-style: none;
+}
+.footer-items .footer ul li a{
+    display: block;
+    font-size: 12px;
+    color: #BFBFBF;
+    padding: 5px 0;
+    margin-left: -30px;
+}
+.social-icons li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+.social-icons li a img{
+    width: 30px;
+    height: 30px;
+}
+.footer-copyright{
+    font-size: 12px;
+    color: #BFBFBF;
+    text-align: center;
+    display: block;
+}
+.footer-copyright a{
+    color: #BFBFBF;
+    display: inline-block;
+}
 
 
 
@@ -729,6 +1031,26 @@ header.sticky {
         font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
         visibility: hidden;
         transition: all 0.5s ease;
+    }
+    .vechain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .vechain img{
+        width: 60px;
+        margin: 0 auto;
+    }
+    .vechain-third p,
+    .vechain-third h4{
+        color: #23274a;
+        font-weight: bold;
+    }
+    .newsletter-wrapper{
+        justify-content: center;
+    }
+    .newsletter-wrapper .newsletter-image{
+        display: none;
     }
 }
 
@@ -798,6 +1120,10 @@ header.sticky {
     .fourth-row-text .sync {
         width: 140px;
     }
+    .advisor:nth-child(4),
+    .advisor:nth-child(8){
+        width: 210px;
+    }
     .transaction-section{
         padding: 15px;
     }
@@ -842,12 +1168,14 @@ header.sticky {
     }
     .authority-wrapper h1,
     .governance-text h1,
-    .economy-text h1{
+    .economy-text h1,
+    .newsletter-wrapper .newsletter-text h1{
         font-size: 25px;
         padding: 40px 0px 10px 0px;
     }
     .authority-wrapper p,
-    .economy-text p{
+    .economy-text p,
+    .newsletter-wrapper .newsletter-text p{
         font-size: 16px;
         text-align: justify;
         padding: 15px;
@@ -855,7 +1183,13 @@ header.sticky {
     .vechain-wrapper h1{
         font-size: 18px;
     }
-    
+    .newsletter-section{
+        padding: 45px 60px;
+    }
+    .newsletter-wrapper .newsletter-text{
+        padding: 0px 10px 0px 40px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 580px) {
@@ -880,6 +1214,19 @@ header.sticky {
     .option p{
         font-size: 14px;
     }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        height: 20px !important;
+        width: 20px !important;
+    }
+    .newsletter-section{
+        padding: 30px 50px;
+    }
+    .newsletter-wrapper .newsletter-text{
+        padding: 0px 10px 0px 25px;
+    }
+    .newsletter-text a{
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 380px) {
@@ -892,5 +1239,11 @@ header.sticky {
     .banner-content h3 {
         font-size: 14px;
         text-align: justify;
+    }
+    .newsletter-section{
+        padding: 10px 20px;
+    }
+    .newsletter-wrapper .newsletter-text{
+        padding: 0px 10px 0px 20px;
     }
 }
