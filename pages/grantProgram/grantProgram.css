@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    background: transparent;
+    color: black;
+    display: flex;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+.navbar.sticky {
+    background: #fff;
+    padding: 0;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a img {
+    height: 16px;
+    width: 110px;
+}
+.navbar .menu-list {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+.menu-list li {
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+.menu-list li .active {
+    color: #0590c7;
+}
+.menu-list li a:hover {
+    color: #0590c7;
+}
+.menu-list li a {
+    color: #a2a2a2;
+    display: block;
+    text-decoration: none;
+    font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+.menu-list li a:hover {
+    color: #007bff;
+}
+#drop .sub-nav {
+    width: 110px;
+    z-index: 200;
+    background: #fff;
+    color: #a2a2a2;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding: 0;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+    visibility: hidden;
+    display: none;
+}
+#drop {
+    position: relative;
+}
+.sub-nav li a {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+}
+#drop:hover .sub-nav {
+    visibility: visible;
+    display: block;
+}
+#plusBtn {
+    position: absolute;
+    right: -120px;
+    top: 40%;
+    font-size: 22px;
+    color: #a2a2a2;
+    display: none;
+}
+.banner {
+    height: 110px;
+}
+.icon {
+    color: #a2a2a2;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+.menu-list .cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+/*********************************         Grant-Program Banner Section      *************************/
+.grant-banner-section{
+    padding: 10px 50px 70px 10px;
+    height: auto;
+}
+.grant-banner-section h1{
+    font-size: 65px;
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    padding: 50px 10px 20px 10px;
+    display: block;
+}
+.grant-banner-content p{
+    font-family: 16px;
+    line-height: 30px;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: normal;
+}
+.grant-banner-content a{
+    display: block;
+    width: 220px;
+    height: 55px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    background: transparent;
+    color: #8224E3;
+    border: 2px solid #8224E3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.grant-banner-content a:hover{
+    background-color: rgb(103, 24, 155);
+    color: #fff;
+    border-color: transparent;
+}
+.grant-program-bg{
+    max-width: 550px;
+    max-height: 450px;
+    margin: 0 15px 15px 15px;
+}
+.grant-program-bg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*********************************         Grant Pricing Section       *************************/
+.grant-pricing-section{
+    min-height: 220px;
+    background-color: rgba(210,228,242,0.5);
+}
+.pricing p{
+    text-align: center;
+    font-size: 16px;
+    font-family: tahoma;
+    padding: 65px 10px;
+}
+.pricing p span{
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/*********************************         Grant Round Section       *************************/
+.grant-round-section{
+    background-image: linear-gradient(45deg, rgba(147,113,206,1), rgba(79,126,168,1));
+    min-height: 430px;
+}
+.grant-round-wrapper{
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+}
+.grant-round-wrapper .borderTop{
+    content: "";
+    width: 50px;
+    height: 5px;
+    background: #fff;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.grant-round-wrapper h2{
+    font-family: Oswald;
+    font-size: 55px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    display: block;
+}
+.grant-round-wrapper p{
+    font-size: 18px;
+    color: #fff;
+    padding: 5px;
+}
+.grant-round-wrapper a{
+    display: block;
+    width: 270px;
+    height: 55px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.grant-round-wrapper a:hover{
+    background-color: #fff;
+    color: #000;
+    border-color: transparent;
+}
+
+
+
+
+
+
+
+
+/*********************************         Development-Research Section       *************************/
+.development-research-section{
+    padding-bottom: 70px;
+}
+.development-research-wrapper{
+    max-width: 1200px;
+    min-height: 400px;
+    margin: 50px auto 40px auto;
+    padding-bottom: 50px;
+}
+.development-research-header{
+    padding: 15px;
+    margin-bottom: 25px;
+}
+.development-research-header h2{
+    font-size: 26px;
+    color: #000;
+    font-weight: 700;
+}
+.development-research-header p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    margin: 25px 0 8px 0;
+    color: #000000;
+}
+.development-research-header a{
+    color: #8224E3;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.development-research-list{
+    text-align: justify;
+    background-color: #f6f7f9;
+    padding: 40px 20px 40px 30px;
+}
+.development-research-list ul li{
+    color: #555555;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+/*********************************         Grant Round Section       *************************/
+.bounty-section{
+    background-image: linear-gradient(45deg, rgba(147,113,206,1), rgba(79,126,168,1));
+    min-height: 350px;
+}
+.bounty-wrapper{
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+.bounty-wrapper .borderTop{
+    content: "";
+    width: 50px;
+    height: 5px;
+    background: #fff;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.bounty-wrapper h2{
+    font-family: Oswald;
+    font-size: 55px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    display: block;
+}
+.bounty-wrapper p{
+    font-size: 14px;
+    color: #fff;
+    padding: 5px;
+}
+
+
+
+
+
+/*********************************         Open Bounties Section       *************************/
+.open-bounties-wrapper{
+    padding: 70px 50px;
+}
+.open-bounties-wrapper h2{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+.open-bounties{
+    width: 100%;
+    min-height: 330px;
+    margin: 15px 0;
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 30px;
+    border: 1px solid rgb(230, 223, 223);
+}
+.open-bounties img{
+    height: 60px;
+    width: 60px;
+    margin: 10px 10px 20px 0px;
+}
+.open-bounties h4{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    text-align: left;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.open-bounties h5{
+    font-size: 14px;
+    font-style: italic;
+    color: #8224E3;
+    font-weight: bold;
+}
+.open-bounties p{
+    font-size: 14px;
+    color: #999999;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+.open-bounties .bounties-buttons{
+    display: flex;
+}
+.bounties-buttons a:first-child{
+    width: 124px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1.5px solid rgb(130, 36, 227);
+    color: rgb(255, 255, 255);
+    margin: 0px 25px 0 0;
+    background-color: rgb(130, 36, 227);
+}
+.bounties-buttons a:last-child{
+    width: 104px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 1.5px solid rgb(130, 36, 227);
+    color: rgb(130, 36, 227);
+    font-weight: 500;
+}
+
+
+
+
+
+
+/*********************************         Newsletter Section       *************************/
+.newsletter-section{
+    background-color: #e5e5e5;
+    width: 100%;
+    margin-top: -20px;
+    padding: 75px 100px;
+}
+.newsletter-wrapper{
+    position: relative;
+    max-width: 1140px;
+    max-height: 400px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 0px;
+}
+.newsletter-wrapper .newsletter-text{
+    padding: 0px 10px 0px 100px;
+}
+.newsletter-wrapper .newsletter-text h1{
+    font-family: revert;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    color: #0a0a0a;
+}
+.newsletter-wrapper .newsletter-text p{
+    font-family: arial;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #0a0a0a;
+    margin: 15px 0px 40px 0px;
+}
+.newsletter-wrapper .newsletter-image{
+    width: 570px;
+    height: 400px;
+    padding-top: 70px;
+    margin-right: -10%;
+}
+.newsletter-image img{
+    height: 300px;
+    width: 300px;
+}
+.newsletter-text a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 120px;
+    height: 50px;
+    border: 1px solid rgb(10, 10, 10);
+    font-family: arial;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: rgb(10, 10, 10);
+}
+
+
+
+
+
+
+
+/*********************************          Footer Section       *************************/
+.footer-section{
+    background-color: #023042;
+    color: #fff;
+}
+.footer-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0 25px 20px;
+}
+.footer-wrapper h1{
+    font-size: 30px;
+    font-family: revert;
+    font-weight: 600;
+}
+.footer-wrapper hr{
+    height: 1.5px;
+    color: #fff;
+    margin: 20px 0 25px 0;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer{
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.footer h4{
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px 0 0 0;
+}
+.footer-items .footer ul li{
+    list-style: none;
+}
+.footer-items .footer ul li a{
+    display: block;
+    font-size: 12px;
+    color: #BFBFBF;
+    padding: 5px 0;
+    margin-left: -30px;
+}
+.social-icons li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+.social-icons li a img{
+    width: 30px;
+    height: 30px;
+}
+.footer-copyright{
+    font-size: 12px;
+    color: #BFBFBF;
+    text-align: center;
+    display: block;
+}
+.footer-copyright a{
+    color: #BFBFBF;
+    display: inline-block;
+}
+
+
+
+
+
+
+/*********************************          Responsive Design       *************************/
+@media (max-width: 1230px) {
+    .content {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 930px) {
+    .banner {
+        height: 65px;
+    }
+    .content {
+        padding: 0 30px;
+        height: 60px;
+    }
+    .content .logo img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 45%;
+    }
+    .newsletter-wrapper{
+        justify-content: center;
+    }
+    .newsletter-wrapper .newsletter-image{
+        display: none;
+    }
+    .grant-banner-section h1,
+    .grant-round-wrapper h2{
+        font-size: 50px;
+    }
+    .grant-program-bg{
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 868px) {
+    body.disabled {
+        overflow: hidden;
+    }
+    .icon {
+        display: block;
+    }
+    .icon.hide {
+        display: none;
+    }
+    .navbar .menu-list {
+        position: fixed;
+        height: 120vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list {
+        left: 0%;
+    }
+    .menu-list li {
+        padding: 5px;
+        list-style: none;
+        font-weight: bold;
+    }
+    .menu-list li .active {
+        color: #0590c7;
+    }
+    .menu-list li a:hover {
+        color: #0590c7;
+    }
+    .menu-list li a {
+        color: #a2a2a2;
+        margin-top: 20px;
+        display: block;
+        text-decoration: none;
+        font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .menu-list li a:hover {
+        color: #007bff;
+    }
+    .navbar.show .menu-list li a {
+        margin-left: 0px;
+    }
+    .newsletter-wrapper .newsletter-text h1,
+    .pricing p span{
+        font-size: 25px;
+        padding: 40px 0px 10px 0px;
+    }
+    .newsletter-wrapper .newsletter-text p{
+        font-size: 16px;
+        text-align: justify;
+        padding: 15px;
+    }
+    .newsletter-section{
+        padding: 45px 60px;
+    }
+    .newsletter-wrapper .newsletter-text{
+        padding: 0px 10px 0px 40px;
+        text-align: center;
+    }
+    .grant-banner-section h1,
+    .grant-round-wrapper h2{
+        font-size: 40px;
+    }
+    .development-research-list{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    .newsletter-section{
+        padding: 30px 50px;
+    }
+    .newsletter-wrapper .newsletter-text{
+        padding: 0px 10px 0px 25px;
+    }
+    .newsletter-text a{
+        margin: 0 auto;
+    }
+    .grant-banner-section {
+        padding: 10px 15px 70px 10px;
+    }
+    .grant-banner-section h1,
+    .grant-round-wrapper h2{
+        font-size: 35px;
+    }
+    .grant-banner-content p{
+        text-align: justify;
+    }
+    .pricing p {
+        padding: 30px 10px;
+    }
+    .grant-banner-content a,
+    .grant-round-wrapper a {
+        width: 160px;
+        height: 47px;
+        font-size: 13px;
+        margin: 0 auto;
+    }
+    .development-research-list ul li{
+        font-size: 14px;
+        padding-bottom: 6px;
+    }
+    .development-research-list{
+        text-align: justify;
+        background-color: #f6f7f9;
+        padding: 10px 8px 10px 5px;
+    }
+    .open-bounties-wrapper {
+        padding: 55px 20px;
+    }
+    .open-bounties {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .newsletter-section{
+        padding: 10px 20px;
+    }
+    .newsletter-wrapper .newsletter-text{
+        padding: 0px 10px 0px 20px;
+    }
+    .grant-banner-section h1,
+    .grant-round-wrapper h2{
+        font-size: 23px;
+    }
+    .pricing p span{
+        font-size: 20px;
+    }
+    .open-bounties-wrapper {
+        padding: 55px 5px;
+    }
+    .open-bounties {
+        padding: 20px 10px;
+    }
+}

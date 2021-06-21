@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.row>* {
+    padding-right: 0 !important ;
+    padding-left: 0 !important;
+}
+header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    background: transparent;
+    color: black;
+    display: flex;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+.navbar.sticky {
+    background: #fff;
+    padding: 0;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a img {
+    height: 16px;
+    width: 110px;
+}
+.navbar .menu-list {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+.menu-list li {
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+.menu-list li .active {
+    color: #0590c7;
+}
+.menu-list li a:hover {
+    color: #0590c7;
+}
+.menu-list li a {
+    color: #a2a2a2;
+    display: block;
+    text-decoration: none;
+    font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+.menu-list li a:hover {
+    color: #007bff;
+}
+#drop .sub-nav {
+    width: 110px;
+    z-index: 200;
+    background: #fff;
+    color: #a2a2a2;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding: 0;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+    visibility: hidden;
+    display: none;
+}
+#drop {
+    position: relative;
+}
+.sub-nav li a {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+}
+#drop:hover .sub-nav {
+    visibility: visible;
+    display: block;
+}
+#plusBtn {
+    position: absolute;
+    right: -120px;
+    top: 40%;
+    font-size: 22px;
+    color: #a2a2a2;
+    display: none;
+}
+.banner {
+    height: 110px;
+}
+.icon {
+    color: #a2a2a2;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+.menu-list .cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+/*********************************         Enterprise-Banner Section       *************************/
+.enterprise-banner-section{
+    width: 100%;
+    min-height: 620px;
+    background-image: linear-gradient(rgba(37,47,54,0.8),rgba(37,47,54,0.8)), url('../../images/Enterprise/Enterprise-banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    color: #fff;
+}
+.enterprise-banner-wrapper{
+    max-width: 950px;
+    margin: 0px auto;
+    padding: 100px 0px 80px 0px;
+}
+.enterprise-banner-content{
+    max-width: 470px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+.enterprise-banner-content h1{
+    font-size: 70px;
+    font-family: 'Oswald';
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.enterprise-banner-content p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+.enterprise-banner-content a{
+    max-width: 250px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.enterprise-banner-content a:hover{
+    background: rgb(255, 255, 255);
+    color: #454545;
+
+}
+.banner-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+}
+.banner-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    margin: 5px 15px;
+}
+.banner-text p{
+    color: #454545;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 8px;
+}
+
+
+
+
+
+
+/*********************************         innovate-enterprise Section       *************************/
+.innovate-enterprise-section h2{
+    text-align: center;
+    padding: 130px 15px 80px 15px;
+    font-size: 50px;
+    font-family: 'Oswald';
+    font-weight: bold;
+    color: #2f2e2e;
+}
+.innovate-wrapper{
+    background: #F2F2F2;
+    padding: 55px 40px 25px 60px;
+    margin-bottom: 200px;
+}
+.innovate-wrapper .innovate-image{
+    max-width: 570px;
+    float: right;
+    margin-bottom: 20px;
+}
+.innovate-wrapper .innovate-image img{
+    height: 100%;
+    width: 100%;
+}
+.innovate-wrapper .innovate-content{
+    max-width: 770px;
+    padding: 15px;
+}
+.innovate-wrapper .innovate-content p{
+    color: #0590C7;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.innovate-wrapper .innovate-content h2{
+    font-family: 'Oswald';
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    color: #2f2e2e;
+    padding: 0 0 15px 0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.innovate-content .innovate-text{
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.innovate-text .innovate-text-left,
+.innovate-text .innovate-text-right{
+    max-width: 290px;
+}
+.innovate-text h4 a{
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #333333;
+    display: block;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+.innovate-text .innovate-text-left p,
+.innovate-text .innovate-text-right p{
+    font-size: 14px;
+    color: #808080;
+    padding: 15px 20px;
+}
+.innovate-text ul li a{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*********************************         BlockChain Technology Section       *************************/
+.blockchain-technology-section{
+    width: 100%;
+    
+}
+.blockchain-technology-wrapper{
+    width: 100%;
+    background: #F2F2F2;
+    margin-bottom: 200px;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+.blockchain-technology-wrapper .row {
+    margin: 100px 0px -170px 100px !important;
+    padding: 110px 110px 0px 110px;
+}
+.blockchain-technology-wrapper .blockchain-technology-image{
+    max-width: 480px;
+    height: 600px;
+    margin-bottom: 20px;
+}
+.blockchain-technology-wrapper .blockchain-technology-image img{
+    height: 100%;
+    width: 100%;
+}
+.blockchain-technology-wrapper .blockchain-technology-content{
+    padding: 15px;
+    margin: 0 50px;
+}
+.blockchain-technology-wrapper .blockchain-technology-content p{
+    color: #0590C7;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+}
+.blockchain-technology-wrapper .blockchain-technology-content h2{
+    font-family: 'Oswald';
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    color: #2f2e2e;
+    padding: 0 0 15px 0;
+    text-align: left;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+.blockchain-technology-content .blockchain-technology-text{
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blockchain-technology-text .blockchain-technology-text-left,
+.blockchain-technology-text .blockchain-technology-text-right{
+    max-width: 250px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+.blockchain-technology-text h4 a{
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #333333;
+    display: block;
+    padding-bottom: 5px;
+}
+.blockchain-technology-text .blockchain-technology-text-left p,
+.blockchain-technology-text .blockchain-technology-text-right p{
+    font-size: 14px;
+    color: #808080;
+    padding: 15px 20px;
+}
+.blockchain-technology-text ul li a{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/*********************************         house-development Section       *************************/
+.house-development-wrapper{
+    background: #F2F2F2;
+    padding: 15px 40px 25px 60px;
+    margin-bottom: 100px;
+}
+.house-development-wrapper .house-development-image{
+    max-width: 530px;
+    height: 600px;
+    float: right;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+.house-development-wrapper .house-development-image img{
+    height: 100%;
+    width: 100%;
+}
+.house-development-wrapper .house-development-content{
+    max-width: 770px;
+    padding: 15px;
+}
+.house-development-wrapper .house-development-content p{
+    color: #0590C7;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0  10px 15px;
+}
+.house-development-wrapper .house-development-content h2{
+    font-family: 'Oswald';
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    color: #2f2e2e;
+    padding: 0 0 15px 15px;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+.house-development-content .house-development-text{
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.house-development-text .house-development-text-left,
+.house-development-text .house-development-text-right{
+    max-width: 290px;
+}
+.house-development-text h4 a{
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #333333;
+    display: block;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+.house-development-text .house-development-text-left p,
+.house-development-text .house-development-text-right p{
+    font-size: 14px;
+    color: #808080;
+    padding: 15px 20px;
+}
+.house-development-text ul li a{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.house-dev-link{
+    text-align: center;
+    font-size: 14px;
+    color: #0590c7;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+/*********************************         .building-vechain-section       *************************/
+.building-vechain-section{
+    background-image: linear-gradient(rgba(37,47,54,0.3),rgba(37,47,54,0.3)), url("../../images/Enterprise/Vechain-bg-image.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-position: center center;
+    height: 400px;
+}
+.building-vechain-section .building-vechain-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.building-vechain-content h2{
+    font-family: Oswald;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.building-vechain-content a{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/*********************************         Newsletter Section       *************************/
+.newsletter-section{
+    background-color: #e5e5e5;
+    width: 100%;
+    margin-top: -20px;
+    padding: 75px 100px;
+}
+.newsletter-wrapper{
+    position: relative;
+    max-width: 1140px;
+    max-height: 400px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 0px;
+}
+.newsletter-wrapper .newsletter-text{
+    padding: 0px 10px 0px 100px;
+}
+.newsletter-wrapper .newsletter-text h1{
+    font-family: revert;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    color: #0a0a0a;
+}
+.newsletter-wrapper .newsletter-text p{
+    font-family: arial;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #0a0a0a;
+    margin: 15px 0px 40px 0px;
+}
+.newsletter-wrapper .newsletter-image{
+    width: 570px;
+    height: 400px;
+    padding-top: 70px;
+    margin-right: -10%;
+}
+.newsletter-image img{
+    height: 300px;
+    width: 300px;
+}
+.newsletter-text a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 120px;
+    height: 50px;
+    border: 1px solid rgb(10, 10, 10);
+    font-family: arial;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: rgb(10, 10, 10);
+}
+
+
+
+
+
+
+
+
+/*********************************          Footer Section       *************************/
+.footer-section{
+    background-color: #023042;
+    color: #fff;
+}
+.footer-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0 25px 20px;
+}
+.footer-wrapper h1{
+    font-size: 30px;
+    font-family: revert;
+    font-weight: 600;
+}
+.footer-wrapper hr{
+    height: 1.5px;
+    color: #fff;
+    margin: 20px 0 25px 0;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer{
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.footer h4{
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px 0 0 0;
+}
+.footer-items .footer ul li{
+    list-style: none;
+}
+.footer-items .footer ul li a{
+    display: block;
+    font-size: 12px;
+    color: #BFBFBF;
+    padding: 5px 0;
+    margin-left: -30px;
+}
+.social-icons li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+.social-icons li a img{
+    width: 30px;
+    height: 30px;
+}
+.footer-copyright{
+    font-size: 12px;
+    color: #BFBFBF;
+    text-align: center;
+    display: block;
+}
+.footer-copyright a{
+    color: #BFBFBF;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************          Responsive Design       *************************/
+@media (max-width: 1230px) {
+    .content {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding: 0 40px;
+    }
+    .innovate-wrapper .innovate-image {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .blockchain-technology-wrapper .blockchain-technology-image,
+    .house-development-wrapper .house-development-image {
+        max-width: 100%;
+    }
+    .blockchain-technology-wrapper .row {
+        margin: 0px 0px -45px 0px !important;
+        padding: 0px !important;
+    }
+    .house-development-wrapper {
+        padding: 15px 0 25px 0px;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px){
+    .innovate-wrapper .innovate-image{
+        width: 390px;
+        height: 230px;
+    }
+    .innovate-text .innovate-text-left, 
+    .innovate-text .innovate-text-right {
+        max-width: 250px;
+    }
+    .blockchain-technology-wrapper .blockchain-technology-image {
+        max-width: 100%;
+        margin: 60px 0px 0px 30px;
+    }
+    .blockchain-technology-wrapper .blockchain-technology-content {
+        padding: 50px 10px 10px 70px;
+        margin: 0px;
+    }
+    .house-development-wrapper .house-development-image{
+        max-width: 400px;
+        height: 640px;
+        float: right;
+        margin-bottom: 20px;
+        margin-top: -50px;
+        margin-right: 30px;
+    }
+    .house-development-text .house-development-text-left, .house-development-text .house-development-text-right {
+        max-width: 240px;
+        text-align: justify;
+        margin-right: 40px;
+    }
+    .house-development-wrapper .house-development-content {
+        padding: 15px 25px;
+    }
+}
+@media (max-width: 930px) {
+    .banner {
+        height: 85px;
+    }
+    .content {
+        padding: 0 30px;
+        height: 60px;
+    }
+    .content .logo img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 45%;
+    }
+    .newsletter-wrapper{
+        justify-content: center;
+    }
+    .newsletter-wrapper .newsletter-image{
+        display: none;
+    }
+}
+
+@media (max-width: 868px) {
+    body.disabled {
+        overflow: hidden;
+    }
+    .icon {
+        display: block;
+    }
+    .icon.hide {
+        display: none;
+    }
+    .navbar .menu-list {
+        position: fixed;
+        height: 120vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list {
+        left: 0%;
+    }
+    .menu-list li {
+        padding: 5px;
+        list-style: none;
+        font-weight: bold;
+    }
+    .menu-list li .active {
+        color: #0590c7;
+    }
+    .menu-list li a:hover {
+        color: #0590c7;
+    }
+    .menu-list li a {
+        color: #a2a2a2;
+        margin-top: 20px;
+        display: block;
+        text-decoration: none;
+        font: normal normal 14px / 22px "arial", Helvetica, Arial, Verdana, sans-serif;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .menu-list li a:hover {
+        color: #007bff;
+    }
+    .navbar.show .menu-list li a {
+        margin-left: 0px;
+    }
+    #drop .sub-nav{
+        background-color: transparent !important;
+    }
+    .newsletter-wrapper .newsletter-text h1,
+    .newsletter-wrapper .newsletter-text p{
+        font-size: 16px;
+        text-align: justify;
+        padding: 15px;
+    }
+    .newsletter-section{
+        padding: 45px 60px;
+    }
+    .newsletter-wrapper .newsletter-text{
+        padding: 0px 10px 0px 40px;
+        text-align: center;
+    }
+    .innovate-enterprise-section h2{
+        padding-top: 90px;
+    }
+    .innovate-wrapper{
+        margin-bottom: 0px;
+    }
+    .blockchain-technology-wrapper{
+        margin-bottom: 20px;
+    }
+    .innovate-wrapper, .blockchain-technology-wrapper {
+        padding: 10px 0px 25px 0px;
+    }
+    .blockchain-technology-wrapper .row{
+        padding: 0px;
+    }
+    .innovate-wrapper{
+        margin-bottom: 0px;
+    }
+    .blockchain-technology-wrapper{
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 580px) and (max-width: 800px){
+    .innovate-wrapper .innovate-content {
+        max-width: 770px;
+        padding: 15px 40px;
+    }
+    .house-development-text .house-development-text-left, .house-development-text .house-development-text-right {
+        max-width: 240px;
+        text-align: justify;
+    }
+    .house-development-wrapper .house-development-content {
+        padding-left: 40px;
+    }
+    .blockchain-technology-text .blockchain-technology-text-left p, 
+    .blockchain-technology-text .blockchain-technology-text-right p {
+        padding: 15px 0px;
+    }
+    .house-development-wrapper{
+        margin-bottom: 50px;
+    }
+    .house-dev-link{
+        margin-bottom: 70px;
+    }
+}
+@media (max-width: 580px) {
+    .newsletter-section{
+        padding: 30px 50px;
+    }
+    .newsletter-wrapper .newsletter-text{
+        padding: 0px 10px 0px 25px;
+    }
+    .newsletter-text a{
+        margin: 0 auto;
+    }
+    .enterprise-banner-content h1{
+        font-size: 40px;
+    }
+    .innovate-wrapper {
+        padding: 55px 0px 25px 0px;
+    }
+    .innovate-enterprise-section h2 {
+        padding: 50px 15px 30px 15px;
+        font-size: 37px;
+    }
+    .innovate-wrapper .innovate-content h2,
+    .building-vechain-content h2{
+        font-size: 35px;
+        padding-bottom: 0px;
+    }
+    .innovate-text .innovate-text-left p, 
+    .innovate-text .innovate-text-right p,
+    .blockchain-technology-text .blockchain-technology-text-left p, 
+    .blockchain-technology-text .blockchain-technology-text-right p {
+        padding: 8px 10px 0px 5px;
+    }
+    .blockchain-technology-wrapper .blockchain-technology-content {
+        padding: 15px;
+        margin: 0 0;
+    }
+    .blockchain-technology-wrapper .blockchain-technology-image {
+        height: 330px ;
+    }
+    .house-development-wrapper .house-development-image {
+        height: 330px;
+    }
+    .house-development-text .house-development-text-left, .house-development-text .house-development-text-right {
+        max-width: 100%;
+        text-align: justify;
+    }
+    .house-development-wrapper .house-development-content h2,
+    .blockchain-technology-wrapper .blockchain-technology-content h2 {
+        font-size: 40px;
+    }
+    .house-development-wrapper{
+        margin-bottom: 40px;
+    }
+    .house-dev-link{
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 380px) {
+    .newsletter-section{
+        padding: 10px 20px;
+    }
+    .newsletter-wrapper .newsletter-text{
+        padding: 0px 10px 0px 20px;
+    }
+    .innovate-wrapper,
+    .blockchain-technology-wrapper {
+        padding: 55px 0px 25px 0px;
+    }
+    .blockchain-technology-wrapper .blockchain-technology-image {
+        min-height: 225px;
+        margin-bottom: 10px;
+    }
+    .innovate-wrapper .innovate-content h2,
+    .blockchain-technology-wrapper .blockchain-technology-content h2{
+        font-size: 32px;
+        padding-bottom: 0px;
+    }
+    .house-development-wrapper .house-development-content h2,
+    .blockchain-technology-wrapper .blockchain-technology-content h2 ,
+    .building-vechain-content h2{
+        font-size: 32px;
+    }
+}
