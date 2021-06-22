@@ -463,12 +463,12 @@ header{
 
 /*********************************         .building-vechain-section       *************************/
 .building-vechain-section{
-    background-image: linear-gradient(rgba(37,47,54,0.3),rgba(37,47,54,0.3)), url("../../images/Enterprise/Vechain-bg-image.png");
+    background-image: linear-gradient(rgba(37,47,54,0.1),rgba(37,47,54,0.1)), url("../../images/Enterprise/Vechain-bg-image.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% auto;
     background-position: center center;
-    height: 400px;
+    height: 420px;
 }
 .building-vechain-section .building-vechain-content{
     height: 100%;
