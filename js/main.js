@@ -14,7 +14,7 @@ function myFunction() {
         subNav.style.transitionDelay = "1s";
         subNav.style.display = "none";
         document.getElementById("plusBtn").style.top = "40%";
-        document.getElementById("plusBtn").style.right = "-120px";
+        document.getElementById("plusBtn").style.right = "-105px";
         clicked = false;
     } else {
         document.getElementById("plusBtn").innerText = "-";
@@ -23,7 +23,7 @@ function myFunction() {
         subNav.style.transitionDelay = "1s";
         subNav.style.display = "block";
         document.getElementById("plusBtn").style.top = "20px";
-        document.getElementById("plusBtn").style.right = "-95px";
+        document.getElementById("plusBtn").style.right = "-80px";
         clicked = true;
     }
 }

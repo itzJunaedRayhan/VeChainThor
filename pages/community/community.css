@@ -111,6 +111,7 @@ header{
 }
 .banner {
     height: 110px;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 20%);
 }
 .icon {
     color: #a2a2a2;
@@ -125,217 +126,181 @@ header{
     top: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-/*********************************         Startup Banner Section       *************************/
-.startup-banner-section{
+/*********************************         Community-Banner-section       *************************/
+.community-banner-section{
     width: 100%;
-    height: 450px;
-    background-image: url("../../images/Startup/Startup-banner-bg.png");
+    height: 80vh;
+    background: url("../../images/Community/Community\ Banner\ bg.png");
     background-repeat: no-repeat;
+    background-size: auto;
     background-attachment: scroll;
-    background-size: auto 110%;
-    background-position: 80% 50%;
-    background-color: #31429E;
-    padding: 0px 50px;
+    background-position: center center;
 }
-.startup-banner-wrapper{
-    max-width: 1010px;
-    height: 100%;
-    margin: 0 auto;
+.community-banner-section .community-content{
+    max-width: 410px;
+    height: 80vh;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-}
-.startup-banner-wrapper h1{
-    font-family: 'Oswald';
-    font-size: 80px;
-    font-weight: bold;
-    font-style: normal;
-    color: #ffffff;
-    padding-left: 110px;
-}
-.startup-banner-wrapper p{
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    color: #fff;
-    font-style: normal;
-    padding-left: 110px;
-}
-.startup-banner-wrapper a{
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    border: 1px solid rgb(255, 237, 191);
-    background-color: rgb(255, 237, 191);
-    color: rgb(0, 0, 0);
-    padding: 7px 15px;
-    transition: all 0.7s ease;
-    margin-left: 110px;
-}
-.startup-banner-wrapper a:hover{
-    border: 1px solid rgb(204, 195, 174);
-    background-color: rgb(204, 195, 174);
-}
-.startup-banner-wrapper .vertical-writing{
-    width: 320px;
-    display: block;
-    position: absolute;
-    left: -10%;
-    bottom: 27%;
-}
-.startup-banner-wrapper .vertical-writing p{
-    width: 320px;
-    text-align: right;
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    border-bottom: 10px solid #fff;
-    transform: rotate(270deg);
-}
-
-/*********************************         Building Section       *************************/
-.building-section{
-    width: 100%;
-    min-height: 400px;
-}
-.building-wrapper{
-    max-width: 900px;
-    min-height: 400px;
-    margin: 0 auto;
-    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
 }
-.building-wrapper .building-heading h1{
-    font-size: 80px;
-    font-family: 'Oswald';
-    color: #000000;
-    font-weight: bold;
-}
-.building-wrapper .building-content p{
-    padding-top: 60px;
-    padding-bottom: 20px;
-    font-size: 15px;
-    color: #A2A2A2;
-}
-.building-wrapper .building-content p a{
-    color: #0590C7;
-    text-decoration: underline;
-    font-size: 16px;
-}
-/*********************************         Grow Section       *************************/
-.grow-section{
-    width: 100%;
-    min-height: 400px;
-    background-color: #EAEAEA;
-    padding: 15px 0px 40px 15px;
-}
-.grow-wrapper{
-    max-width: 900px;
-    min-height: 400px;
-    margin: 0 auto;
-}
-.grow-heading{
-    min-width: 300px;
-    height: 260px;
-    line-height: 3em;
-    background-color: #ffffff;
-    padding: 47px 42px 35px 3px;
-    border-radius: 0px;
-    float: right;
-    margin-top: 40px;
-    margin-right: 20px;
-}
-.grow-heading h1{
-    font-size: 80px;
-    color: #000000;
-    font-family: 'Oswald';
-    text-align: right;
-    font-weight: bold;
-}
-.grow-content{
-    max-width: 400px;
+.community-banner-section .community-content img{
+    width: 72px;
+    height: 72px;
     margin: 15px;
-    padding-top: 12%;
 }
-.grow-content p{
-    padding-top: 60px;
-    padding-bottom: 20px;
-    font-size: 15px;
-    color: #000000;
-}
-.grow-content p a{
-    color: #31429E;
-    text-decoration: underline;
-    font-size: 16px;
+.community-banner-section .community-content h1{
+    font-size: 80px;
+    color: #333;
+    font-family: 'Oswald';
     font-weight: bold;
+    padding: 0px 15px 15px 25px; 
+}
+.community-banner-section .community-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: #808080;
+}
+.community-banner-section .community-content a{
+    display: block;
+    font-size: 16px;
+    padding: 8px 40px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    margin: 20px 15px;
+    transition: all 0.3s ease;
+}
+.community-banner-section .community-content a:hover{
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
+/*********************************         community-services-section       *************************/
+.community-services-section{
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 5px 0px;
+    background: #f2f2f2;
+}
+.community-services-wrapper{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.community-services-wrapper h4{
+    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.community-services-wrapper .community-image{
+    width: 165px;
+    height: 165px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+} 
+.community-services-wrapper .community-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.community-text .content-links{
+    padding-bottom: 9px;
+}
+.community-text .content-links a{
+    display: block;
+    font-size: 15px;
+    color: rgb(12, 11, 11);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.community-text .content-links p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A2A2A2;
 }
 
-/*********************************         Scale Section       *************************/
-.scale-section{
-    width: 100%;
-    min-height: 400px;
-    padding: 30px 15px 10px 15px;
-    background-color: #FAFAFA;
+
+
+
+
+
+
+.developer-services-wrapper{
+    max-width: 670px;
+    margin:100px auto;
 }
-.scale-wrapper{
-    max-width: 800px;
-    min-height: 400px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 15px 70px 15px;
-}
-.scale-wrapper .scale-heading h1{
-    font-size: 80px;
+.developer-services-wrapper h4{
+    font-size: 30px;
     font-family: 'Oswald';
-    color: #000000;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 30px;
+    text-align: right;
+}
+.developer-services-wrapper .developer-image{
+    width: 165px;
+    height: 165px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    float: right;
+} 
+.developer-services-wrapper .developer-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.developer-text .developer-links{
+    padding-bottom: 9px;
+}
+.developer-text .developer-links a{
+    display: block;
+    font-size: 15px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
     font-weight: bold;
 }
-.scale-wrapper .scale-content{
-    position: relative;
-}
-.scale-wrapper .scale-content p{
-    position: relative;
-    line-height: 1.5em;
-    background-image: url('../../images/Startup/skyblue-bg.png');
-    background-position: right bottom;
-    background-size: 92% 85%;
-    background-repeat: no-repeat;
-    margin-top: 19%;
-    margin-bottom: 0px;
-    padding: 0px 68px 50px 0px;
-    border-radius: 0px;
-    font-size: 15px;
+.developer-text .developer-links p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
     color: #A2A2A2;
-    font-weight: 600;
 }
-.scale-wrapper .scale-content p a{
-    color: #0590C7;
-    text-decoration: underline;
-    font-size: 16px;
-}
-.scale-link{
+
+.community-link{
     text-align: center;
     padding: 20px 15px 80px 15px;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 600;
 }
-.scale-link a{
+.community-link a{
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*********************************         building-vechain-section       *************************/
@@ -508,23 +473,6 @@ header{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*********************************          Responsive Design       *************************/
 @media (max-width: 1230px) {
     .content {
@@ -630,55 +578,33 @@ header{
         padding: 0px 10px 0px 40px;
         text-align: center;
     }
-    .building-wrapper .building-heading h1,
-    .grow-wrapper .grow-heading h1,
-    .scale-wrapper .scale-heading h1{
-        font-size: 50px;
+    .community-banner-section{
+        width: 100%;
+        height: 70vh;
+        background: #fff;
+        margin-bottom: 30px;
     }
-    .grow-wrapper {
-        min-height: 375px;
+    .community-banner-section .community-content{
+        max-width: 410px;
+        height: 70vh;
     }
-    .grow-heading{
+    .developer-services-wrapper .developer-image{
         float: none;
-        background: transparent;
-        height: 175px;
-        padding: 16px 42px 35px 10px;
-        margin-top: 20px;
     }
-    .grow-heading h1{
+    .community-services-section {
+        padding: 50px 37px 5px 37px;
+    }
+    .developer-services-wrapper {
+        margin: 20px auto;
+        padding-left: 0px !important;
+    }
+    .developer-services-wrapper h4{
         text-align: left;
-    }
-    .grow-content{
-        padding-top: 0%;
-        max-width: 100%;
-    }
-    .grow-content p{
-        padding-top: 30px;
-    }
-    .scale-wrapper{
-        padding: 15px 15px 10px 15px;
-    }
-    .scale-wrapper .scale-content p{
-        margin-top: 5%;
+        padding: 15px;
     }
     .scale-link {
         text-align: center;
         padding: 60px 15px 50px 15px;
-    }
-    .scale-section {
-        padding: 0px 15px 10px 15px;
-    }
-}
-@media (min-width: 650px) and (max-width: 800px){
-    .startup-banner-section{
-        padding: 0px;
-    }
-    .startup-banner-wrapper h1,
-    .startup-banner-wrapper p{
-        padding-left: 150px;
-    }
-    .startup-banner-wrapper a{
-        margin-left: 150px;
     }
 }
 @media (max-width: 580px) {
@@ -691,50 +617,43 @@ header{
     .newsletter-text a{
         margin: 0 auto;
     }
-    .startup-banner-wrapper .vertical-writing{
-        display: none;
+    .community-banner-section{
+        width: 100%;
+        height: 55vh;
+        background: #fff;
     }
-    .startup-banner-section{
-        padding: 10px;
-    }
-    .startup-banner-wrapper h1{
-        font-size: 50px;
-    }
-    .startup-banner-wrapper a{
-        font-size: 11px;
-    }
-    .startup-banner-wrapper h1,
-    .startup-banner-wrapper p{
-        padding-left: 20px;
-    }
-    .startup-banner-wrapper a{
-        margin-left: 20px;
-    }
-    .building-wrapper .building-heading h1,
-    .grow-wrapper .grow-heading h1
-    .scale-wrapper .scale-heading h1{
-        font-size: 40px;
-    }
-    .building-wrapper .building-content p,
-    .scale-wrapper .scale-content p{
-        padding: 10px 0px 50px 0px;
-        font-size: 15px;
-        text-align: justify;
-    }
-    .grow-wrapper {
-        min-height: 320px;
-    }
-    .grow-heading {
-        min-width: 300px;
-        height: 85px;
-        padding: 0 42px 35px 3px;
-    }
-    .scale-wrapper{
-        padding: 15px 0px 10px 0px;
+    .community-banner-section .community-content{
+        height: 57vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .building-vechain-content h2{
         font-size: 35px;
         padding-bottom: 0px;
+    }
+    .community-services-section {
+        padding: 40px 0px 5px 0px;
+    }
+    .community-banner-section .community-content img {
+        width: 55px;
+        height: 55px;
+        margin: 7px;
+    }
+    .community-banner-section .community-content h1{
+        font-size: 40px;
+    }
+    .community-services-wrapper{
+        padding-left: 18px;
+    }
+    .developer-services-wrapper {
+        padding-left: 20px !important;
+    }
+    .community-link {
+        text-align: center;
+        padding: 0px 15px 27px 15px;
+        margin-top: 50px;
+        font-size: 14px;
+        font-weight: 600;
     }
 }
 
@@ -747,6 +666,13 @@ header{
     }
     .building-vechain-content h2{
         font-size: 32px;
+    }
+    .community-banner-section .community-content h1{
+        font-size: 40px;
+    }
+    .community-content p{
+        font-size: 16px;
+        padding: 0px 15px;
     }
 }
 

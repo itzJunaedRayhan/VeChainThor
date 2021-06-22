@@ -103,7 +103,7 @@ header{
 }
 #plusBtn {
     position: absolute;
-    right: -120px;
+    right: -105px;
     top: 40%;
     font-size: 22px;
     color: #a2a2a2;
@@ -678,6 +678,10 @@ header{
     }
     .menu-list li a:hover {
         color: #007bff;
+    }
+    #drop .sub-nav {
+        background-color: transparent;
+        box-shadow: 0px 0px 1px transparent;
     }
     .navbar.show .menu-list li a {
         margin-left: 0px;
