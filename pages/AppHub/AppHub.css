@@ -168,6 +168,9 @@ a{
     .search-bar{
         margin-right: 15px;
     }
+    .search-bar input{
+        max-width: 175px;
+    }
 }
 
 @media (max-width: 380px){

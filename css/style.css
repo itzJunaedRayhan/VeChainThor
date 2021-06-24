@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -155,7 +156,7 @@ header{
     margin: -15% auto 0 auto;
 }
 .banner-content h1 {
-    font-family: revert;
+    font-family: 'Oswald';
     font-size: 72px;
     font-weight: bold;
     font-style: normal;
@@ -200,7 +201,7 @@ header.sticky {
     padding: 50px 0;
 }
 .resources-section .resources-header h1{
-    font-family: revert;
+    font-family: 'Oswald';
     font-size: 48px;
     font-weight: bold;
     font-style: normal;
@@ -353,7 +354,7 @@ header.sticky {
 .transaction-wrapper h1{
     padding: 30px 0 40px 0;
     text-align: center;
-    font-family: revert;
+    font-family: 'Oswald';
     font-size: 48px;
     font-weight: bold;
     font-style: normal;
@@ -436,7 +437,7 @@ header.sticky {
 .authority-wrapper h1{
     padding: 40px 0 20px 0;
     text-align: center;
-    font-family: revert;
+    font-family: 'Oswald';
     font-size: 48px;
     font-weight: bold;
     font-style: normal;
@@ -527,7 +528,7 @@ header.sticky {
 .governance-text h1{
     padding: 40px 0 20px 0;
     text-align: center;
-    font-family: revert;
+    font-family: 'Oswald';
     font-size: 48px;
     font-weight: bold;
     font-style: normal;
@@ -580,7 +581,7 @@ header.sticky {
 .economy-text h1{
     padding: 40px 0 20px 0;
     text-align: center;
-    font-family: revert;
+    font-family: 'Oswald';
     font-size: 48px;
     font-weight: bold;
     font-style: normal;
@@ -661,7 +662,7 @@ header.sticky {
 }
 .vechain-wrapper h1{
     font-size: 28px;
-    font-family: revert;
+    font-family: 'Oswald';
     font-weight: bold;
     font-style: normal;
     text-align: center;
@@ -735,7 +736,7 @@ header.sticky {
     background-color: #F7F8FB;
 }
 .committee-section h1{
-    font-family: revert;
+    font-family: 'Oswald';
     font-size: 48px;
     font-weight: bold;
     font-style: normal;
@@ -862,7 +863,7 @@ header.sticky {
     padding: 0px 10px 0px 100px;
 }
 .newsletter-wrapper .newsletter-text h1{
-    font-family: revert;
+    font-family: 'Oswald';
     font-size: 50px;
     font-weight: bold;
     font-style: normal;
@@ -917,7 +918,7 @@ header.sticky {
 }
 .footer-wrapper h1{
     font-size: 30px;
-    font-family: revert;
+    font-family: 'Oswald';
     font-weight: 600;
 }
 .footer-wrapper hr{
