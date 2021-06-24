@@ -722,6 +722,9 @@ header{
     .newsletter-text a{
         margin: 0 auto;
     }
+    .bounty-wrapper h2{
+        font-size: 38px;
+    }
     .grant-banner-section {
         padding: 10px 15px 70px 10px;
     }

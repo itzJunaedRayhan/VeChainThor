@@ -849,6 +849,11 @@ header{
         padding-left: 13px;
     }
 }
+@media (min-width: 400px) and (max-width: 500px){
+    .feature p {
+        padding: 25px 10px 25px 75px;
+    }
+}
 @media (max-width: 380px) {
     .newsletter-section{
         padding: 10px 20px;

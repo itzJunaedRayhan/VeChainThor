@@ -996,7 +996,15 @@ header.sticky {
         margin-left: 15px;
     }
 }
-
+@media (min-width: 1000px) and (max-width: 1200px){
+    .banner-section{
+        height: 100vh;
+    }
+    .governance-wrapper,
+    .transaction-wrapper {
+        max-width: 970px;
+    }
+}
 @media (max-width: 930px) {
     .banner {
         height: 65px;
@@ -1045,11 +1053,6 @@ header.sticky {
     .vechain img{
         width: 60px;
         margin: 0 auto;
-    }
-    .vechain-third p,
-    .vechain-third h4{
-        color: #23274a;
-        font-weight: bold;
     }
     .newsletter-wrapper{
         justify-content: center;
@@ -1189,6 +1192,9 @@ header.sticky {
         text-align: justify;
         padding: 15px;
     }
+    .vechain-section{
+        background: #0B1A35;
+    }
     .vechain-wrapper h1{
         font-size: 24px;
         padding: 0 20px;
@@ -1203,6 +1209,9 @@ header.sticky {
 }
 
 @media (max-width: 580px) {
+    .banner-section {
+        height: 105vh;
+    }
     .banner-content{
         padding: 0 15px;
     }

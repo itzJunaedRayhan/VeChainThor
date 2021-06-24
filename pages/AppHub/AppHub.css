@@ -155,12 +155,18 @@ a{
         justify-content: space-evenly;
         align-items: center;
     }
+    .nav-left {
+        margin-left: 25px;
+    }
     .nav-right h5{
         padding-right: 8px;
         margin-right: 0px;
     }
     .discover-section{
         padding: 50px 0px;
+    }
+    .search-bar{
+        margin-right: 15px;
     }
 }
 
