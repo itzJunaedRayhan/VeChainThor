@@ -199,7 +199,7 @@ header.sticky {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
-    display: block;
+    display: none;
 }
 .connect-wallet-title{
     background: #e7e2e26b;
