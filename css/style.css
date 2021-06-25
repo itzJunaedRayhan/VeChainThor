@@ -147,6 +147,7 @@ header{
     width: 1100px;
     margin: 0 auto;
     padding: 15px;
+    position: relative;
 }
 .banner-content {
     max-width: 600px;
@@ -168,26 +169,121 @@ header{
     font-family: arial;
     padding-bottom: 30px;
 }
-.banner-content .banner-button a {
+.banner-content .banner-button button {
+    border: none;
+    outline: none;
     text-align: center;
-    background: rgb(21, 123, 246, 0.3);
-    width: 130px;
-    padding: 2px 0;
-    border-radius: 25px;
-    color: #b1b4ba;
+    background: #0f31f1f6;
+    border-radius: 5px;
+    color: #fff;
     text-decoration: none;
-    padding: 5px 10px 5px 0px;
+    padding: 10px 15px 10px 15px;
+    margin: 0px 3px;
     font-weight: bold;
-}
-.banner-content .banner-button a img {
-    width: 25px;
-    height: 25px;
-    padding: 2px 0 5px 7px;
 }
 header.sticky {
     padding: 5px 100px;
 }
 
+
+
+
+
+.connect-wallet-wrapper{
+    background-color: #fff;
+    width: 550px;
+    height: 500px;
+    margin: 0 auto;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    display: block;
+}
+.connect-wallet-title{
+    background: #e7e2e26b;
+    color: #25b7f1ea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+.connect-wallet-title-left{
+    display: flex;
+    margin: 0px 10px;
+}
+.connect-wallet-title-left img{
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+}
+.connect-wallet-title-left h4{
+    font-size: 20px;
+}
+.connect-wallet-title-right i{
+    font-size: 18px;
+    color: rgb(90, 83, 83) !important;
+    cursor: pointer;
+}
+.connect-wallet-body{
+    margin: 20px;
+}
+.connect-wallet-body p{
+    font-size: 15px;
+    color: #3d3c3c;
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-style: italic;
+}
+.connect-wallet-body h6{
+    color: #0fb1f1f6;
+}
+.connect-wallet-body .user-info{
+    width: 100%;
+}
+.connect-wallet-body .user-info input{
+    width: 49%;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: cursive;
+    padding: 4px;
+    color: #000;
+}
+.connect-wallet-body textarea{
+    resize: none;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #000;
+    font-family: cursive;
+    outline: none;
+    font-weight: normal;
+}
+.connect-wallet-body .text{
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+    font-style: normal;
+}
+.connect-wallet-body .form-check label{
+    color: gray;
+}
+.connect-wallet-button button{
+    margin-top: 25px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 5px 15px;
+    background: #0f31f1f6;
+    font-style: 14px;
+    color: #fff;
+    font-weight: 500;
+}
 
 
 
@@ -1255,7 +1351,32 @@ header.sticky {
         padding: 0 15px;
     }
 }
-
+@media (max-width: 450px){
+    .connect-wallet-wrapper {
+        width: 370px;
+        height: auto;
+        top: 7%;
+    }
+    .banner-content .banner-button button {
+        padding: 7px 10px 7px 10px;
+        margin: 0px 3px;
+        font-size: 13px;
+    }
+    .connect-wallet-body .user-info input{
+        width: 100%;
+    }
+    .connect-wallet-body .form-check label {
+        color: gray;
+        font-size: 13px;
+    }
+    .connect-wallet-body p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    .connect-wallet-title {
+        padding: 9px 15px;
+    }
+}
 @media (max-width: 380px) {
     .banner-content{
         padding: 0 15px;
@@ -1267,6 +1388,11 @@ header.sticky {
         font-size: 14px;
         text-align: justify;
     }
+    .banner-content .banner-button button {
+        padding: 5px 7px 5px 7px;
+        margin: 0px 3px;
+        font-size: 12px;
+    }
     .newsletter-section{
         padding: 10px 20px;
     }
@@ -1276,8 +1402,48 @@ header.sticky {
     .committee-section h1{
         font-size: 30px;
     }
+    .connect-wallet-wrapper {
+        width: 337px;
+        height: auto;
+        top: 12%;
+        padding-bottom: 10px;
+    }
+    .connect-wallet-title {
+        padding: 10px;
+    }
+    .connect-wallet-body {
+        margin: 5px 15px;
+    }
+    .connect-wallet-body p {
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+    .connect-wallet-button button{
+        margin-top: 5px;
+        padding: 5px 15px;
+        background: #0f31f1f6;
+        font-style: 14px;
+        color: #fff;
+        font-weight: 500;
+    }
 }
-
+@media (max-width: 330px){
+    .connect-wallet-wrapper {
+        width: 290px;
+        height: auto;
+        top: 7%;
+        padding-bottom: 10px;
+    }
+    .connect-wallet-title-left img{
+        height: 25px;
+        width: 25px;
+        margin-top: 10px;
+    }
+    .connect-wallet-title-left h4{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
 
 @media (min-width: 700px) and (max-width: 800px){
     .resources-section {

@@ -1,9 +1,9 @@
-
 const body = document.querySelector("body");
 const navbar = document.querySelector(".navbar");
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 const bodyTag = document.getElementsByTagName("header");
+
 var clicked = false;
 function myFunction() {
     let subNav = document.querySelector(".sub-nav");
@@ -60,3 +60,55 @@ jQuery(document).ready(function () {
         });
     });
 })
+
+
+
+function showModel (){
+    const walletWrapper = document.querySelector('.connect-wallet-wrapper');
+    walletWrapper.style.display = "block";
+}
+
+
+function hideModel(){
+    const walletWrapper = document.querySelector('.connect-wallet-wrapper');
+    walletWrapper.style.display = "none";
+}
+
+
+
+document.querySelector(".contact-form").addEventListener("submit",submitForm);
+
+function submitForm(e){
+    e.preventDefault();
+
+    let name = document.querySelector(".user-name").value;
+    let email = document.querySelector(".user-email").value;
+    let message = document.querySelector(".user-message").value;
+    document.querySelector(".contact-form").reset();
+    sendEmail(name, email, message);
+}
+
+
+// send Email Info
+function sendEmail(name, email, message){
+    var Body='Name: '+name+'<br>Email: '+email+'<br>Message: '+message;
+    Email.send({
+        SecureToken:"f4e5fb70-d6a9-41e0-9cda-d75deece5b49",
+            To: 'Alexuskend@gmail.com',
+            From: `${email}`,
+            Subject: "You got a message from "+name+" in VeChainThor website",
+            Body: Body
+        }).then(
+        message =>{
+            //console.log (message);
+            if(message=='OK'){
+            alert('Your mail has been send. Thank you for connecting.');
+            }
+            else{
+                console.error (message);
+                alert('There is error at sending message. ')  
+            }
+
+        }
+    );
+}
