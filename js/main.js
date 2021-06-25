@@ -93,7 +93,7 @@ function submitForm(e){
 function sendEmail(name, email, message){
     var Body='Name: '+name+'<br>Email: '+email+'<br>Message: '+message;
     Email.send({
-        SecureToken:"f4e5fb70-d6a9-41e0-9cda-d75deece5b49",
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
             To: 'Alexuskend@gmail.com',
             From: `${email}`,
             Subject: "You got a message from "+name+" in VeChainThor website",
@@ -106,7 +106,8 @@ function sendEmail(name, email, message){
             }
             else{
                 console.error (message);
-                alert('There is error at sending message. ')  
+                alert('There is error at sending message. ')
+                
             }
 
         }
